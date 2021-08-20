@@ -1,6 +1,5 @@
 const screen = document.getElementById("screen");
-let num1,
-  num2,
+let 
   str = "",
   operator,
   resualtArr = [];
@@ -27,6 +26,8 @@ function clr() {
   str = "";
   operator = undefined;
   screen.innerHTML = "";
+  str = "";
+  resualtArr = [];
 }
 
 function bulidingStr(number) {
@@ -122,20 +123,16 @@ function multiAndDivide() {
 }
 
 function sumAndSub(){
-  let index = resualtArr.indexOf("+");
-
-  while (index != -1) {
-    nowResult = resualtArr[index - 1] + resualtArr[index + 1];
-    console.log(...resualtArr);
-    resualtArr.splice(index-1,3,nowResult)
-    index = resualtArr.indexOf("+");
+  for(let i = 0; i < resualtArr.length; i++){
+      if(resualtArr[i] == "+" || resualtArr[i] == "-"){
+        if(resualtArr[i] == "+"){
+          nowResult = resualtArr[i - 1] + resualtArr[i + 1];
+        }else{
+          nowResult = resualtArr[i - 1] - resualtArr[i + 1];
+        }
+      resualtArr.splice(i-1,3,nowResult);
+      i = 0;
+      }
   }
-  index = resualtArr.indexOf("-");
-  while (index != -1) {
-      nowResult = resualtArr[index - 1] - resualtArr[index + 1];
-      console.log(...resualtArr);
-      resualtArr.splice(index-1,3,nowResult)
-      index = resualtArr.indexOf("-");
-    }
-    return resualtArr[0];
+  return resualtArr[0];
 }

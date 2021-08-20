@@ -4,7 +4,7 @@ section {
   border: 2px solid black;
 }
 #screen {
-  width: 74%;
+  width: 75%;
   height: 100%;
   background-color: coral;
   font-size: 30px;
@@ -25,11 +25,6 @@ section {
 #clearAll {
   width: 25%;
   height: 100%;
-  background-color: lime;
-
-  
-  /* display: grid; */
-  /* grid-template-columns: repeat(4, 1fr); */
 }
 
 .end:hover{
