@@ -77,8 +77,7 @@ function repeat(elm) {
 
 function result() {
   newBuildingStr("=");
-  let start
-  Index = 0,num;
+  let startIndex = 0,num;
   for(let i = 0; i < str.length-1; i++){
     if(
       str[i] == "+" ||
@@ -115,8 +114,6 @@ function multiAndDivide() {
     resualtArr.splice(index-1,3,nowResult)
     index = resualtArr.indexOf("/");
   }
-  console.log(resualtArr);
-
 }
 
 function sumAndSub(){
