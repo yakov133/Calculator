@@ -31,16 +31,10 @@ function clr() {
 }
 
 function bulidingStr(number) {
-  // str += number;
-  // document.getElementById("screen").innerHTML += number;
   newBuildingStr(number);
 }
 
 function operatorFunc(action) {
-  // operator = action;
-  // num1 = Number(str);
-  // str = "";
-  // document.getElementById("screen").innerHTML += " " + action + " " ;
   newBuildingStr(action);
 }
 
@@ -83,7 +77,8 @@ function repeat(elm) {
 
 function result() {
   newBuildingStr("=");
-  let startIndex = 0,num;
+  let start
+  Index = 0,num;
   for(let i = 0; i < str.length-1; i++){
     if(
       str[i] == "+" ||
@@ -101,6 +96,8 @@ function result() {
   multiAndDivide();
   let finalResualt = sumAndSub();
   screen.innerHTML += " " + finalResualt;
+  str = String(finalResualt);
+  resualtArr=[];
 }
 
 function multiAndDivide() {
