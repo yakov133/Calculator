@@ -10,44 +10,48 @@
 </head>
 
 <body>
-    <section>
-        <div id="top">
-            <article id="screen"></article>
-            
-        <button id="clearAll" class="operators" onclick="clr()" >C</button>
-           
-        </div>
-        
+    <h1 class="calculatorName">Kassa Calculator</h1>
+    <div class="centerAll">
 
-        <article id="info">
-            <button class="numbers" onclick="bulidingStr(1)" >1</button>
-            <button class="numbers" onclick="bulidingStr(2)" >2</button>
-            <button class="numbers" onclick="bulidingStr(3)" >3</button>
-
-            <button class="operators" onclick="operatorFunc('+')" >+</button>
+        <section>
+            <div id="top">
+                <article id="screen"></article>
+                
+            <button id="clearAll" class="operators" onclick="clr()" >C</button>
+               
+            </div>
             
-            <button class="numbers" onclick="bulidingStr(4)" >4</button>
-            <button class="numbers" onclick="bulidingStr(5)" >5</button>
-            <button class="numbers" onclick="bulidingStr(6)" >6</button>
+    
+            <article id="info">
+                <button class="numbers" onclick="bulidingStr(1)" >1</button>
+                <button class="numbers" onclick="bulidingStr(2)" >2</button>
+                <button class="numbers" onclick="bulidingStr(3)" >3</button>
+    
+                <button class="operators" onclick="operatorFunc('+')" >+</button>
+                
+                <button class="numbers" onclick="bulidingStr(4)" >4</button>
+                <button class="numbers" onclick="bulidingStr(5)" >5</button>
+                <button class="numbers" onclick="bulidingStr(6)" >6</button>
+                
+                <button class="operators" onclick="operatorFunc('-')">-</button>
+                
+                <button class="numbers" onclick="bulidingStr(7)" >7</button>
+                <button class="numbers" onclick="bulidingStr(8)" >8</button>
+                <button class="numbers" onclick="bulidingStr(9)" >9</button>
+    
+                <button class="operators" onclick="operatorFunc('x')" >x</button>
+                
+                <button class="end" onclick="result('=')" >=</button>
+                
+                <button class="numbers" onclick="bulidingStr('.')" >.</button>
+                <button class="numbers" onclick="bulidingStr(0)" > 0</button>
+                
+                <button class="operators" onclick="operatorFunc('/')" >/</button>
             
-            <button class="operators" onclick="operatorFunc('-')">-</button>
-            
-            <button class="numbers" onclick="bulidingStr(7)" >7</button>
-            <button class="numbers" onclick="bulidingStr(8)" >8</button>
-            <button class="numbers" onclick="bulidingStr(9)" >9</button>
-
-            <button class="operators" onclick="operatorFunc('x')" >x</button>
-            
-            <button class="end" onclick="result('=')" >=</button>
-            
-            <button class="numbers" onclick="bulidingStr('.')" >.</button>
-            <button class="numbers" onclick="bulidingStr(0)" > 0</button>
-            
-            <button class="operators" onclick="operatorFunc('/')" >/</button>
-        
-        </article>
-
-    </section>
+            </article>
+    
+        </section>
+    </div>
 
 
     <script src="./calculator.js" type="text/javascript"></script>
